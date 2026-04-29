@@ -1,0 +1,196 @@
+[
+    {
+      "query": "What is the role of attention in transformer models?",
+      "type": "multi_doc",
+      "relevant_docs": [
+        "Attention_machine_learning.txt",
+        "Transformer_deep_learning.txt"
+      ]
+    },
+    {
+      "query": "How do large language models differ from traditional machine learning models?",
+      "type": "multi_doc",
+      "relevant_docs": [
+        "Large_language_model.txt",
+        "Machine_learning.txt"
+      ]
+    },
+    {
+      "query": "What is overfitting and how can it be prevented?",
+      "type": "multi_doc",
+      "relevant_docs": [
+        "Overfitting.txt",
+        "Regularization_machine_learning.txt"
+      ]
+    },
+    {
+      "query": "How does transfer learning help improve model performance?",
+      "type": "single_doc",
+      "relevant_docs": [
+        "Transfer_learning.txt"
+      ]
+    },
+    {
+      "query": "What is the relationship between neural networks and transformers?",
+      "type": "multi_doc",
+      "relevant_docs": [
+        "Neural_network_machine_learning.txt",
+        "Transformer_deep_learning.txt"
+      ]
+    },
+    {
+      "query": "How are generative pre-trained transformers used in large language models?",
+      "type": "multi_doc",
+      "relevant_docs": [
+        "Generative_pre-trained_transformer.txt",
+        "Large_language_model.txt"
+      ]
+    },
+    {
+      "query": "What are the key differences between reinforcement learning and supervised learning?",
+      "type": "multi_doc",
+      "relevant_docs": [
+        "Reinforcement_learning.txt",
+        "Machine_learning.txt"
+      ]
+    },
+    {
+      "query": "Why do neural networks overfit and how does regularization help?",
+      "type": "multi_doc",
+      "relevant_docs": [
+        "Neural_network_machine_learning.txt",
+        "Overfitting.txt",
+        "Regularization_machine_learning.txt"
+      ]
+    },
+    {
+      "query": "What are the core components of a transformer architecture?",
+      "type": "single_doc",
+      "relevant_docs": [
+        "Transformer_deep_learning.txt"
+      ]
+    },
+    {
+      "query": "How does attention improve performance in sequence models?",
+      "type": "single_doc",
+      "relevant_docs": [
+        "Attention_machine_learning.txt"
+      ]
+    },
+    {
+      "query": "Compare transfer learning and fine-tuning in machine learning",
+      "type": "multi_doc",
+      "relevant_docs": [
+        "Transfer_learning.txt",
+        "Machine_learning.txt"
+      ]
+    },
+    {
+      "query": "What are the applications of reinforcement learning?",
+      "type": "single_doc",
+      "relevant_docs": [
+        "Reinforcement_learning.txt"
+      ]
+    },
+    {
+        "query": "How do models learn patterns from data?",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Machine_learning.txt",
+          "Neural_network_machine_learning.txt"
+        ]
+      },
+      {
+        "query": "How are transformers different from neural networks?",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Transformer_deep_learning.txt",
+          "Neural_network_machine_learning.txt"
+        ]
+      },
+      {
+        "query": "What improves generalization in models?",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Regularization_machine_learning.txt",
+          "Overfitting.txt"
+        ]
+      },
+      {
+        "query": "How does attention help large language models perform better?",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Attention_machine_learning.txt",
+          "Large_language_model.txt"
+        ]
+      },
+      {
+        "query": "How does transfer learning relate to pre-trained transformers?",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Transfer_learning.txt",
+          "Generative_pre-trained_transformer.txt"
+        ]
+      },
+      {
+        "query": "What is gradient descent in neural networks?",
+        "type": "single_doc",
+        "relevant_docs": [
+          "Neural_network_machine_learning.txt"
+        ]
+      },
+      {
+        "query": "What are tokens in large language models?",
+        "type": "single_doc",
+        "relevant_docs": [
+          "Large_language_model.txt"
+        ]
+      },
+      {
+        "query": "Explain model training",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Machine_learning.txt",
+          "Neural_network_machine_learning.txt"
+        ]
+      },
+      {
+        "query": "How do models avoid memorizing data?",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Overfitting.txt",
+          "Regularization_machine_learning.txt"
+        ]
+      },
+      {
+        "query": "Why are transformers preferred over traditional sequence models?",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Transformer_deep_learning.txt",
+          "Attention_machine_learning.txt"
+        ]
+      },
+      {
+        "query": "How do pre-trained models reduce the need for large labeled datasets?",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Transfer_learning.txt",
+          "Generative_pre-trained_transformer.txt"
+        ]
+      },
+      {
+        "query": "What are the limitations of large language models?",
+        "type": "single_doc",
+        "relevant_docs": [
+          "Large_language_model.txt"
+        ]
+      },
+      {
+        "query": "How does regularization improve model generalization in neural networks?",
+        "type": "multi_doc",
+        "relevant_docs": [
+          "Regularization_machine_learning.txt",
+          "Neural_network_machine_learning.txt"
+        ]
+      }
+  ]

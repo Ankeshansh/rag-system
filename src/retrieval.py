@@ -119,7 +119,7 @@ if __name__ == "__main__":
     # Step 4: Build BM25 index
     bm25 = build_bm25(chunks)
 
-    query = "What is overfitting in machine learning?"
+    query = "Define overfitting in machine learning?"
 
     print("\n--- Dense Retrieval ---\n")
     dense_results = dense_search(query, index, chunks, top_k=5)

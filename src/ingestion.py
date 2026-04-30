@@ -1,6 +1,7 @@
 import os
 from typing import List, Dict
 from dataclasses import dataclass
+import re
 
 
 # ---------- Data Structure ----------
@@ -56,26 +57,21 @@ def clean_text(text: str) -> str:
 
 # ---------- Chunking ----------
 
-def chunk_text(
-    text: str,
-    chunk_size: int = 500,
-    overlap: int = 100
-) -> List[str]:
-    """
-    Splits text into overlapping chunks
-    """
+def chunk_text(text, chunk_size=700, overlap=150):
+    sentences = re.split(r'(?<=[.!?]) +', text)
 
     chunks = []
-    start = 0
-    text_length = len(text)
+    current_chunk = ""
 
-    while start < text_length:
-        end = start + chunk_size
-        chunk = text[start:end]
+    for sentence in sentences:
+        if len(current_chunk) + len(sentence) <= chunk_size:
+            current_chunk += " " + sentence
+        else:
+            chunks.append(current_chunk.strip())
+            current_chunk = sentence
 
-        chunks.append(chunk)
-
-        start += chunk_size - overlap
+    if current_chunk:
+        chunks.append(current_chunk.strip())
 
     return chunks
 

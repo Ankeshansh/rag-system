@@ -127,7 +127,7 @@ if __name__ == "__main__":
     for i, (chunk, score) in enumerate(dense_results):
         print(f"Result {i+1} (score={score:.4f})")
         print(f"Doc: {chunk.doc_id}")
-        print(chunk.text[:200])
+        print(chunk.text)
         print("-" * 50)
 
     print("\n--- Hybrid Retrieval ---\n")
@@ -136,5 +136,5 @@ if __name__ == "__main__":
     for i, chunk in enumerate(hybrid_results):
         print(f"Result {i+1}")
         print(f"Doc: {chunk.doc_id}")
-        print(chunk.text[:200])
+        print(chunk.text)
         print("-" * 50)

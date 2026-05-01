@@ -40,7 +40,7 @@ def retrieve_and_rerank(
     chunks,
     top_k: int = 5
 ):
-    candidates = hybrid_search(query, index, bm25, chunks, top_k=top_k * 3)
+    candidates = hybrid_search(query, index, bm25, chunks, top_k=top_k * 5)
     reranked = rerank(query, candidates, top_k=top_k)
     return reranked
 
@@ -67,5 +67,5 @@ if __name__ == "__main__":
     for i, (chunk, score) in enumerate(results):
         print(f"Result {i+1} (score={score:.4f})")
         print(f"Doc: {chunk.doc_id}")
-        print(chunk.text[:200])
+        print(chunk.text)
         print("-" * 50)

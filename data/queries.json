@@ -5,6 +5,12 @@
       "relevant_docs": [
         "Attention_machine_learning.txt",
         "Transformer_deep_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["attention"],
+        ["weights", "importance", "focus"],
+        ["sequence", "context"],
+        ["transformer"]
       ]
     },
     {
@@ -13,6 +19,12 @@
       "relevant_docs": [
         "Large_language_model.txt",
         "Machine_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["large language model", "llm"],
+        ["pretrained", "pre-training"],
+        ["deep learning", "neural network"],
+        ["feature engineering", "traditional"]
       ]
     },
     {
@@ -21,6 +33,12 @@
       "relevant_docs": [
         "Overfitting.txt",
         "Regularization_machine_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["overfitting"],
+        ["generalization", "generalize"],
+        ["regularization", "dropout", "early stopping"],
+        ["training data", "noise"]
       ]
     },
     {
@@ -28,6 +46,12 @@
       "type": "single_doc",
       "relevant_docs": [
         "Transfer_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["transfer learning"],
+        ["pretrained"],
+        ["fine-tuning", "adapt"],
+        ["less data", "efficiency"]
       ]
     },
     {
@@ -36,6 +60,12 @@
       "relevant_docs": [
         "Neural_network_machine_learning.txt",
         "Transformer_deep_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["transformer"],
+        ["neural network"],
+        ["architecture", "model"],
+        ["attention"]
       ]
     },
     {
@@ -44,6 +74,12 @@
       "relevant_docs": [
         "Generative_pre-trained_transformer.txt",
         "Large_language_model.txt"
+      ],
+      "expected_answer_keywords": [
+        ["transformer", "gpt"],
+        ["pretrained", "pre-training"],
+        ["language model", "llm"],
+        ["text generation", "generate"]
       ]
     },
     {
@@ -52,6 +88,12 @@
       "relevant_docs": [
         "Reinforcement_learning.txt",
         "Machine_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["reinforcement learning"],
+        ["supervised learning"],
+        ["reward", "environment"],
+        ["labeled data", "labels"]
       ]
     },
     {
@@ -61,6 +103,12 @@
         "Neural_network_machine_learning.txt",
         "Overfitting.txt",
         "Regularization_machine_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["overfitting"],
+        ["complexity", "parameters"],
+        ["regularization", "dropout", "penalty"],
+        ["generalization"]
       ]
     },
     {
@@ -68,6 +116,12 @@
       "type": "single_doc",
       "relevant_docs": [
         "Transformer_deep_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["attention"],
+        ["encoder", "decoder"],
+        ["layers"],
+        ["feedforward", "ffn"]
       ]
     },
     {
@@ -75,6 +129,12 @@
       "type": "single_doc",
       "relevant_docs": [
         "Attention_machine_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["attention"],
+        ["context"],
+        ["weights", "importance"],
+        ["sequence", "dependency"]
       ]
     },
     {
@@ -83,6 +143,12 @@
       "relevant_docs": [
         "Transfer_learning.txt",
         "Machine_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["transfer learning"],
+        ["fine-tuning"],
+        ["pretrained"],
+        ["adaptation", "task-specific"]
       ]
     },
     {
@@ -90,6 +156,12 @@
       "type": "single_doc",
       "relevant_docs": [
         "Reinforcement_learning.txt"
+      ],
+      "expected_answer_keywords": [
+        ["reinforcement learning"],
+        ["robotics", "control"],
+        ["game playing", "games"],
+        ["decision making", "optimization"]
       ]
     },
     {
@@ -98,6 +170,12 @@
         "relevant_docs": [
           "Machine_learning.txt",
           "Neural_network_machine_learning.txt"
+        ],
+        "expected_answer_keywords": [
+          ["patterns"],
+          ["data"],
+          ["training", "learning"],
+          ["parameters", "weights"]
         ]
       },
       {
@@ -106,6 +184,12 @@
         "relevant_docs": [
           "Transformer_deep_learning.txt",
           "Neural_network_machine_learning.txt"
+        ],
+        "expected_answer_keywords": [
+          ["transformer"],
+          ["neural network"],
+          ["attention"],
+          ["architecture", "structure"]
         ]
       },
       {
@@ -114,6 +198,12 @@
         "relevant_docs": [
           "Regularization_machine_learning.txt",
           "Overfitting.txt"
+        ],
+        "expected_answer_keywords": [
+          ["generalization"],
+          ["overfitting"],
+          ["regularization", "dropout", "penalty"],
+          ["performance"]
         ]
       },
       {
@@ -122,6 +212,12 @@
         "relevant_docs": [
           "Attention_machine_learning.txt",
           "Large_language_model.txt"
+        ],
+        "expected_answer_keywords": [
+          ["attention"],
+          ["context"],
+          ["weights", "importance"],
+          ["language model", "llm"]
         ]
       },
       {
@@ -130,6 +226,12 @@
         "relevant_docs": [
           "Transfer_learning.txt",
           "Generative_pre-trained_transformer.txt"
+        ],
+        "expected_answer_keywords": [
+          ["transfer learning"],
+          ["pretrained"],
+          ["fine-tuning", "adaptation"],
+          ["transformer"]
         ]
       },
       {
@@ -137,6 +239,12 @@
         "type": "single_doc",
         "relevant_docs": [
           "Neural_network_machine_learning.txt"
+        ],
+        "expected_answer_keywords": [
+          ["gradient descent"],
+          ["optimization"],
+          ["loss", "error"],
+          ["weights", "parameters"]
         ]
       },
       {
@@ -144,6 +252,12 @@
         "type": "single_doc",
         "relevant_docs": [
           "Large_language_model.txt"
+        ],
+        "expected_answer_keywords": [
+          ["token"],
+          ["text", "words"],
+          ["input representation", "encoding"],
+          ["language model"]
         ]
       },
       {
@@ -152,6 +266,12 @@
         "relevant_docs": [
           "Machine_learning.txt",
           "Neural_network_machine_learning.txt"
+        ],
+        "expected_answer_keywords": [
+          ["training", "learning"],
+          ["data"],
+          ["loss", "error"],
+          ["weights", "parameters"]
         ]
       },
       {
@@ -160,6 +280,12 @@
         "relevant_docs": [
           "Overfitting.txt",
           "Regularization_machine_learning.txt"
+        ],
+        "expected_answer_keywords": [
+          ["overfitting"],
+          ["generalization"],
+          ["regularization", "dropout", "early stopping"],
+          ["training data", "noise"]
         ]
       },
       {
@@ -168,6 +294,12 @@
         "relevant_docs": [
           "Transformer_deep_learning.txt",
           "Attention_machine_learning.txt"
+        ],
+        "expected_answer_keywords": [
+          ["transformer"],
+          ["attention"],
+          ["parallel", "parallelization"],
+          ["rnn", "lstm", "sequence"]
         ]
       },
       {
@@ -176,6 +308,12 @@
         "relevant_docs": [
           "Transfer_learning.txt",
           "Generative_pre-trained_transformer.txt"
+        ],
+        "expected_answer_keywords": [
+          ["pretrained", "pre-training"],
+          ["transfer learning"],
+          ["fine-tuning", "adaptation"],
+          ["less data", "efficiency"]
         ]
       },
       {
@@ -183,6 +321,12 @@
         "type": "single_doc",
         "relevant_docs": [
           "Large_language_model.txt"
+        ],
+        "expected_answer_keywords": [
+          ["bias"],
+          ["hallucination"],
+          ["data dependence", "training data"],
+          ["limitations", "constraints"]
         ]
       },
       {
@@ -191,6 +335,12 @@
         "relevant_docs": [
           "Regularization_machine_learning.txt",
           "Neural_network_machine_learning.txt"
+        ],
+        "expected_answer_keywords": [
+          ["regularization"],
+          ["generalization"],
+          ["overfitting"],
+          ["penalty", "dropout"]
         ]
       }
   ]

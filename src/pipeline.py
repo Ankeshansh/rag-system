@@ -29,21 +29,7 @@ def build_system(data_path="data/docs"):
     return chunks, index, bm25
 
 
-# ---------- Context Builder ----------
-
-# def build_context(reranked_chunks, max_chars=2000):
-
-#     context = ""
-
-#     for chunk, _ in reranked_chunks:
-#         if len(context) + len(chunk.text) <= max_chars:
-#             context += chunk.text.strip() + "\n\n"
-#         else:
-#             break
-
-#     return context.strip()
-
-def build_context(query, reranked_chunks, model, max_chars=2000):
+def build_context(query, reranked_chunks, model, max_chars=2500):
 
     query_emb = model.encode([query])[0]
 

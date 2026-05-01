@@ -1,0 +1,6 @@
+numpy>=1.24
+faiss-cpu>=1.7
+sentence-transformers>=2.2
+rank-bm25>=0.2
+ollama>=0.1
+requests>=2.28

@@ -2,7 +2,6 @@ venv/
 __pycache__/
 *.pyc
 .env
-data/docs/*
 .DS_Store
 experiments/results.json
 *.log

@@ -4,8 +4,7 @@ from typing import List, Tuple
 from sentence_transformers import SentenceTransformer
 from rank_bm25 import BM25Okapi
 
-from ingestion import Chunk, ingest
-
+from src.ingestion import Chunk, ingest
 
 # ---------- Load Embedding Model ----------
 

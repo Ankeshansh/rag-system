@@ -1,8 +1,8 @@
 from typing import List, Tuple
 from sentence_transformers import CrossEncoder
 
-from ingestion import Chunk
-from retrieval import hybrid_search
+from src.ingestion import Chunk
+from src.retrieval import hybrid_search
 
 
 # ---------- Load Cross Encoder ----------

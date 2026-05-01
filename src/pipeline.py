@@ -1,10 +1,11 @@
-from ingestion import ingest
-from retrieval import build_embeddings, build_faiss_index, build_bm25
-from rerank import retrieve_and_rerank
-from generate import generate_answer
+from src.ingestion import ingest
+from src.retrieval import build_embeddings, build_faiss_index, build_bm25
+from src.rerank import retrieve_and_rerank
+from src.generate import generate_answer
 
 import numpy as np
 from sentence_transformers import SentenceTransformer
+from collections import defaultdict
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -72,14 +73,34 @@ def build_context(query, reranked_chunks, model, max_chars=2000):
     return context.strip()
 
 
+def diversify_chunks(reranked_chunks, top_k=5, max_per_doc=2):
+    doc_count = defaultdict(int)
+    diversified = []
+
+    for chunk, score in reranked_chunks:
+        doc_id = chunk.doc_id
+
+        if doc_count[doc_id] < max_per_doc:
+            diversified.append((chunk, score))
+            doc_count[doc_id] += 1
+
+        if len(diversified) == top_k:
+            break
+
+    return diversified
+
+
 # ---------- Retrieval Pipeline ----------
 
 def retrieve_context(query, chunks, index, bm25, top_k=5):
 
     # Step 1: retrieve + rerank
-    reranked = retrieve_and_rerank(query, index, bm25, chunks, top_k=top_k)
+    reranked = retrieve_and_rerank(query, index, bm25, chunks, top_k=top_k * 3)
 
-    # Step 2: build context
+    # Step 2: apply diversity
+    reranked = diversify_chunks(reranked, top_k=top_k, max_per_doc=2)
+
+    # Step 3: build context
     context = build_context(query, reranked, model)
 
     return context, reranked
